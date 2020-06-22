@@ -9,8 +9,6 @@ xoExampleCorePlugin::xoExampleCorePlugin(QObject *parent) : xoCorePlugin(parent)
 
 void xoExampleCorePlugin::start()
 {
-    //qDebug() << FileUtilities::getFilesOfType(Core::FolderSchemes, Core::FileExtensionScheme);
-    //qDebug() << Core::FolderModules + "xoExampleModuleApp" << QDir(Core::FolderModules + "xoExampleModuleApp").exists()
     //Copy example schemes if there are no schemes and corresponding modules exists
     if (FileUtilities::getFilesOfType(Core::FolderSchemes, Core::FileExtensionScheme).count() == 0)
     {
